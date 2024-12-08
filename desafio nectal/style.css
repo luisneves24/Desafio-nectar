@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+    background-image: url(fundosvirtuaiszoom.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%; 
+    text-align: center;
+}
+form { 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+        
+}
+
+label { 
+    font-weight: bold;
+    text-align: left;
+}
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+.errror {
+    color: red;
+    font-size: 14px;
+    text-align: left;
+    display: none;
+}
+
+#formMessage {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+input, textarea, button {
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; 
+        padding: 20px; 
+    }
+
+    h1 {
+        font-size: 22px; 
+    }
+
+    label {
+        font-size: 14px; 
+    }
+
+    input, textarea, button {
+        font-size: 14px; 
+    }
+
+    button {
+        padding: 8px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px; 
+    }
+
+    h1 {
+        font-size: 18px; 
+    }
+
+    input, textarea, button {
+        padding: 8px; 
+    }
+
+    label {
+        font-size: 12px; 
+    }
+
+    button {
+        font-size: 16px; 
+    }
+
+    textarea {
+        height: 60px; 
+    }
+}
+
+
+@media (max-width: 320px) {
+    .container {
+        padding: 10px; 
+    }
+
+    h1 {
+        font-size: 16px; 
+    }
+
+    input, textarea, button {
+        font-size: 12px; 
+    }
+
+    button {
+        font-size: 14px; 
+    }
+} 

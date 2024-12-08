@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadrastro de Leads</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadrastro de Leads</h1>
+        <form id="leadForm">
+
+            <label for="nome">Nome completo  </label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <span class="error" id="nomeError"></span>
+
+            <label for="email">Email </label>
+            <input type="text" id="email" name="email" placeholder="Digite seu email" required>
+
+            <span class="error" id="emailError"></span>
+
+            <label for="telefone">Telefone </label>
+            <input type="text" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx">
+
+            <span class="error" id="telefoneError"></span>
+
+            <label for="mensagem">Mensagem</label>
+           <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem (opcinal)"></textarea>
+
+           <button type="submit" id="submitButton"  >Enviar</button>
+
+        </form>
+
+        <p id="formMessage"></p>
+    </div>
+    <script src="scrit.js"></script>
+    
+</body>
+</html>
